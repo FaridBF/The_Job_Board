@@ -1,3 +1,5 @@
+/*General Rules*/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +7,11 @@
   font-family: sans-serif;
 }
 
-html {
-  min-width: 1200px;
-}
+/*Header*/
 
 .header {
   width: 100%;
   height: 100px;
-  left: 0px;
-  top: 0px;
   background: #333333;
 }
 
@@ -28,6 +26,8 @@ h1 {
   padding-top: 20px;
 }
 
+/*Container - body*/
+
 h2 {
   width: 266px;
   height: 157px;
@@ -38,19 +38,18 @@ h2 {
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 1020px;
+  /* width: 70%; */
+  max-width: 1000px;
   height: 1020px;
   margin: 0 auto;
   justify-content: space-between;
   margin-top: 50px;
 }
 
+/*Container - item*/
+
 .item {
   position: relative;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
   width: 300px;
   height: 300px;
   background: #ffffff;
@@ -80,6 +79,8 @@ h2 {
   line-height: 21px;
   color: #000000;
 }
+
+/*Gestion des couleurs container*/
 
 .color1 {
   border: solid #e30413 10px;
@@ -111,8 +112,38 @@ h2 {
   justify-content: center;
 }
 
+/*Class pour mettre en gras*/
+
 .bold {
   margin-left: 5px;
   margin-right: 5px;
   font-weight: bold;
+}
+
+/*Gestion du responsive*/
+
+@media all and (max-width: 1200px) {
+  .container {
+    justify-content: space-evenly;
+    height: 100%;
+  }
+  .item {
+    margin-bottom: 25px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+  }
+  .item {
+    margin-bottom: 20px;
+  }
+  html {
+    min-width: 380px;
+  }
 }

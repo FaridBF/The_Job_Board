@@ -1,6 +1,6 @@
 # The Job Board
 
-## **Création d'une application [React](https://fr.reactjs.org/) - Projet Front-End **
+## **Création d'une application [React](https://fr.reactjs.org/) - Projet Front-End**
 
 <br>Exercice réalisé dans le cadre du [Bootcamp "Le Reacteur"](https://www.lereacteur.io/)</br>
 
@@ -12,6 +12,7 @@
 - Créer un composant
 - Transmettre des props (Job ayant pour props className, title, contractType, country et city)
 - Appliquer un style (via className)
+- Gestion du responsive
 - Savoir utiliser le [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 - Respecter la maquette initiale fournie via l'outil [Figma](https://www.figma.com/fr/).
 - Respecter l'arbre de composants à créer (App, Header, Title, Jobs, Job )
